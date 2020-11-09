@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8' ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<h2 id="tech-stack">Tech Stack</h2>
+		<ul>
+			<li>Java 8</li>
+			<li>Spring Boot 2.3.3</li>
+			<li>JUnit 4.12</li>
+			<li>Mockito 2.23</li>
+			<li>Lombok</li>
+			<li>Swagger 2.7.0 (Useful for REST API test)</li>
+			<li>Apache Maven 3.6.3</li>
+			<li>Spring Data JPA</li>
+			<li>PostgreSQL</li>
+			<li>Docker version 19.03.13</li>
+		</ul>
+		<h2 id="running-the-application">Running the application</h2>
+		<p>Docker Images (TAG - springbootapp &amp; TAG - postgres): </p>
+		<pre class="language-bash"><code class="language-bash">https://hub.docker.com/r/vikramk1612/zoomanagement</code></pre>
+		<p>Pull docker image: </p>
+		<pre class="language-bash"><code class="language-bash">docker pull</code></pre>
+		<p>To compose container (docker-compose.yml file present on project workspace ): </p>
+		<pre class="language-bash"><code class="language-bash">docker-compose up</code></pre>
+		<p>To start application (Post 9081 &amp; DB 5432): </p>
+		<pre class="language-bash"><code class="language-bash">http://localhost:9081/swagger-ui.html#</code></pre>
+		<h2 id="testing">Testing</h2>
+		<pre class="language-bash"><code class="language-bash">mvnw clean test</code></pre>
+		<h1 id="api-documentation">API Documentation</h1>
+		<p>Swagger2 documentation is available.</p>
+		<pre><code>http://localhost:9081/swagger-ui.html#</code></pre>
+		<h2 id="java-documentation">Java Documentation</h2>
+		<pre><code>zooAssessmentEurail/doc/index.html</code></pre>
+		<h2 id="improvements-to-make">Improvements to make</h2>
+		<pre><code>- Maven can be replaced with Gradle.
+- DB queries performance can be optimise with index.
+- Swagger not used fully.
+- Test classes for Room Entity
+- Lombok use may be improved.
+- Constants and enum to improve readability.
+- Validator can be improve for Java beans, input and dto.</code></pre>
+	</body>
+</html>
